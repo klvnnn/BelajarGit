@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" href="img/logo.png" type = "image/x-icon">
+    <title>Cart</title>
+</head>
+<body>
+    <!--Navbar -->
+    <nav class="navbar navbar-expand-lg mb-4 mt-4">
+        <div class="container">
+            <a alt="cek" href = "/"><img src="/img/logo.png"></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav w-100 d-flex justify-content-end">
+                <li class="nav-item">
+                    <a class="nav-link" id="active" aria-current="page" href="/">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/Categories.html">Categories</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/Rewards.html">Rewards</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/SignUp.html">Sign Up</a>
+                </li>
+                <li>
+                    <a class="btn btn-outline-success text-white Button px-4 ms-4" href="/SignIn.html">Sign In</a>
+                </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div class="container mb-4 border-bottom">
+        <a class="text-muted text-decoration-none" href="/">Home</a> /
+        <a class="active text-decoration-none text-black" href="/ShoppingCart.html"><span>Cart</span></a>
+        <table class="table mt-4 table-bordered border-white">
+            <thead>
+                <th scope="col" class="pb-4">Image</th>
+                <th scope="col" class="pb-4">Name & Seller</th>
+                <th scope="col" class="pb-4">Price</th>
+                <th scope="col" class="pb-4">Menu</th>
+            </thead>
+            <tbody>
+                <tr>
+                    <th scope="row"><img src="/img/detail1.png" alt=""></th>
+                    <td class="py-4">Sofa Ternyaman <br> <p class="table-sub"> by Andi Sukka</p></td>
+                    <td class="py-4">$29,122 <br> <p class="table-sub"> USD </p></td>
+                    <td><button class="btn btn-remove mt-2 " type="button">Remove</button></td>
+                </tr>
+                <tr>
+                    <th scope="row"><img src="/img/pic2.png" alt="" width="160" height="85"></th>
+                    <td class="py-4">Sneaker <br> <p class="table-sub"> by BuildWith Angga</p></td>
+                    <td class="py-4">$80,309 <br> <p class="table-sub"> USD </p> </td>
+                    <td><button class="btn btn-remove mt-2 " type="button">Remove</button></td>
+                </tr>
+                <tr>
+                    <th scope="row"><img src="/img/pic1.jpg" alt="" width="160" height="85"></th>
+                    <td class="py-4">Coffee Holder <br><p class="table-sub"> by Addictex</p></td>
+                    <td class="py-4">$13,492<br> <p class="table-sub"> USD </p></td>
+                    <td><button class="btn btn-remove mt-2 " type="button">Remove</button></td>
+                </tr>
+            </tbody>
+          </table>
+    </div>
+    <div class="container">
+        <p class="fw-bold">Shipping Detail</p>
+        <form class="row g-3 col-10">
+            <div class="col-6">
+              <label for="inputAddress" class="form-label">Address 1</label>
+              <input type="text" class="form-control Button-Up" id="inputAddress" placeholder="Sentra Duta Cemara">
+            </div>
+            <div class="col-6">
+              <label for="inputAddress2" class="form-label">Address 2</label>
+              <input type="text" class="form-control Button-Up" id="inputAddress2" placeholder="Blok B2 No. 34">
+            </div>
+            <div class="col-md-4">
+              <p>Province</p>
+              <input type="text" class="form-control Button-Up" placeholder="West Java">
+            </div>
+            <div class="col-md-4">
+              <p>City</p>
+              <input type="text" class="form-control Button-Up" id="inputCity" placeholder="Bandung">
+            </div>
+            <div class="col-md-4">
+              <p>Postal Code</p>
+              <input type="text" class="form-control Button-Up" placeholder="123999">
+            </div>
+            <div class="col-6">
+                <p>Country</p>
+                <input type="text" class="form-control Button-Up" placeholder="Indonesia">
+            </div>
+            <div class="col-6">
+                <p>Mobile</p>
+                <input type="text" class="form-control Button-Up" placeholder="+628 2020 11111">
+            </div>
+        </form>
+        <p class="fw-bold mt-5">Payments Information</p>
+        <table class="table table-bordered border-white">
+            <tbody>
+                <tr>
+                    <td >$10 <br> <p class="table-sub"> Country Tax</p></td>
+                    <td >$280 <br> <p class="table-sub"> Product Insurance </p></td>
+                    <td >$580 <br> <p class="table-sub"> Ship to Jakarta</p></td>
+                    <td class="pe-5 total">$392,409 <br> <p class="table-sub "> Total </p></td>
+                    <td ><a class="btn btn-outline-success text-white Button px-4" href="/TransactionSuccess.html">Checkout Now</a></td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    <!-- Footer -->
+    <footer class="border-top footer">
+        <div class="d-flex justify-content-center mt-4">
+          <p class="mt-2"> 2019 Copyright Store. All Rights Reserved</p>
+        </div>
+    </footer>
+    <script src="js/bootstrap.min.js"></script>
+</body>
+</html>
